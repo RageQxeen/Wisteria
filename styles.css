@@ -269,7 +269,7 @@ li {
   display: grid;
   place-items: center;
   margin: 0 auto 1.5rem;
-  max-width: 280px;
+  max-width: 350px;
   padding: 1.2rem;
   border-radius: 50%;
   background: radial-gradient(circle, rgba(255,255,255,0.16), rgba(0,128,128,0.08), transparent 68%);
