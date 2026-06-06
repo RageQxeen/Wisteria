@@ -1,0 +1,72 @@
+<svg width="800" height="1200" viewBox="0 0 800 1200" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="800" y2="1200" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#120b1b"/>
+      <stop offset="32%" stop-color="#281137"/>
+      <stop offset="66%" stop-color="#4c183e"/>
+      <stop offset="100%" stop-color="#09060d"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="80" y1="0" x2="720" y2="0" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#b38cff"/>
+      <stop offset="50%" stop-color="#ff7dad"/>
+      <stop offset="100%" stop-color="#ffd58a"/>
+    </linearGradient>
+    <radialGradient id="moonGlow" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(400 300) rotate(90) scale(280 340)">
+      <stop offset="0%" stop-color="#ffd7f0" stop-opacity="0.35"/>
+      <stop offset="45%" stop-color="#9c76ff" stop-opacity="0.12"/>
+      <stop offset="100%" stop-color="#000000" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="shadow" x="-50%" y="-50%" width="200%" height="200%">
+      <feDropShadow dx="0" dy="8" stdDeviation="10" flood-color="#000000" flood-opacity="0.65"/>
+    </filter>
+    <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="10"/>
+    </filter>
+  </defs>
+
+  <rect width="800" height="1200" rx="28" fill="url(#bg)"/>
+  <rect x="14" y="14" width="772" height="1172" rx="22" stroke="#f5ddff" stroke-opacity="0.30" stroke-width="3"/>
+  <rect x="30" y="30" width="740" height="1140" rx="16" stroke="#ffd6ea" stroke-opacity="0.14" stroke-width="2"/>
+  <ellipse cx="400" cy="310" rx="320" ry="260" fill="url(#moonGlow)"/>
+
+  <!-- Vixen Market skyline -->
+  <g opacity="0.42">
+    <path d="M0 770L40 744L78 752L118 705L150 742L196 668L244 735L294 642L350 720L402 650L462 728L520 664L580 738L634 690L690 755L742 730L800 768V1200H0V770Z" fill="#170d22"/>
+    <path d="M0 835L54 800L104 824L148 782L198 842L246 770L306 855L356 805L420 870L480 805L540 872L600 820L664 884L720 828L800 890V1200H0V835Z" fill="#09060d"/>
+  </g>
+
+  <!-- crescent and stars -->
+  <g opacity="0.95">
+    <circle cx="132" cy="128" r="40" fill="#f8edff"/>
+    <circle cx="150" cy="120" r="37" fill="#120b1b"/>
+    <circle cx="220" cy="90" r="4" fill="#f6d4ff"/>
+    <circle cx="250" cy="145" r="3" fill="#ffd18a"/>
+    <circle cx="590" cy="94" r="4" fill="#f6d4ff"/>
+    <circle cx="655" cy="146" r="3" fill="#ffd18a"/>
+    <circle cx="690" cy="88" r="4" fill="#d5a8ff"/>
+  </g>
+
+  <path d="M88 210C210 160 590 160 712 210" stroke="url(#accent)" stroke-opacity="0.65" stroke-width="3"/>
+  <path d="M130 1000C250 1040 550 1040 670 1000" stroke="url(#accent)" stroke-opacity="0.36" stroke-width="2"/>
+
+  <g filter="url(#shadow)">
+    <text x="400" y="285" text-anchor="middle" fill="#fff6ff" font-size="86" font-family="Georgia, 'Times New Roman', serif" letter-spacing="3">WE NEED</text>
+    <text x="400" y="375" text-anchor="middle" fill="#ffd6ea" font-size="100" font-family="Georgia, 'Times New Roman', serif" letter-spacing="4">YOU</text>
+    <text x="400" y="440" text-anchor="middle" fill="#e9d7ff" font-size="29" font-family="Georgia, 'Times New Roman', serif" letter-spacing="1.5">Wisteria Calls for New Stories</text>
+  </g>
+
+  <rect x="92" y="510" width="616" height="305" rx="24" fill="#1b1224" fill-opacity="0.9" stroke="#f5d6ff" stroke-opacity="0.24" stroke-width="2"/>
+  <text x="400" y="570" text-anchor="middle" fill="#ffd9ef" font-size="36" font-family="Georgia, 'Times New Roman', serif" letter-spacing="1.5">Needed Characters</text>
+  <text x="400" y="655" text-anchor="middle" fill="#f8efff" font-size="64" font-family="Georgia, 'Times New Roman', serif" letter-spacing="4">YOU</text>
+  <text x="400" y="720" text-anchor="middle" fill="#e9d7ff" font-size="27" font-family="Georgia, 'Times New Roman', serif">Canon characters and OCs welcome.</text>
+  <text x="400" y="765" text-anchor="middle" fill="#e9d7ff" font-size="25" font-family="Georgia, 'Times New Roman', serif">Kitsune, dragons, mages, soldiers, humans,</text>
+  <text x="400" y="800" text-anchor="middle" fill="#e9d7ff" font-size="25" font-family="Georgia, 'Times New Roman', serif">and anything willing to face Wisteria.</text>
+
+  <g filter="url(#shadow)">
+    <text x="400" y="905" text-anchor="middle" fill="#f9f1ff" font-size="30" font-family="Georgia, 'Times New Roman', serif">The Vixen Market is open.</text>
+    <text x="400" y="955" text-anchor="middle" fill="#f3c8dd" font-size="27" font-family="Georgia, 'Times New Roman', serif">The Hangman Incident has left scars.</text>
+    <text x="400" y="1005" text-anchor="middle" fill="#f3c8dd" font-size="27" font-family="Georgia, 'Times New Roman', serif">The next chapter needs a witness.</text>
+  </g>
+
+  <text x="400" y="1110" text-anchor="middle" fill="#ffdb97" font-size="42" font-family="Georgia, 'Times New Roman', serif" letter-spacing="2" filter="url(#shadow)">JOIN WISTERIA</text>
+</svg>
