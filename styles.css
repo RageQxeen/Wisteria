@@ -696,3 +696,56 @@ li {
   object-position: center;
   background: rgba(0, 0, 0, 0.35);
 }
+
+
+/* TRUE horizontal location and map image treatment: generated images are landscape canvases that show the full original art. */
+.location-list .feature-card {
+  grid-template-columns: 1fr !important;
+  gap: 1.25rem;
+}
+
+.location-list .image-frame {
+  width: 100%;
+  min-height: 0 !important;
+  aspect-ratio: 16 / 7;
+  display: block;
+  overflow: hidden;
+  background: rgba(0, 0, 0, 0.35);
+}
+
+.location-list .image-frame img {
+  width: 100%;
+  height: 100% !important;
+  object-fit: cover !important;
+  object-position: center !important;
+  display: block;
+}
+
+.section-heading.sub-heading {
+  width: 100%;
+  max-width: 900px;
+  text-align: center !important;
+  margin: 2.75rem auto 1.25rem !important;
+}
+
+.section-heading.sub-heading .eyebrow,
+.section-heading.sub-heading h3,
+.section-heading.sub-heading p {
+  text-align: center !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+}
+
+.map-grid {
+  align-items: start;
+}
+
+.map-card img {
+  width: 100%;
+  height: auto !important;
+  aspect-ratio: 16 / 9;
+  object-fit: cover !important;
+  object-position: center !important;
+  display: block;
+  background: rgba(0, 0, 0, 0.35);
+}
