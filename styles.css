@@ -570,7 +570,6 @@ li {
   aspect-ratio: 3 / 1;
   object-fit: cover;
   border-radius: calc(var(--radius) - 8px);
-  border: 1px solid var(--border);
   margin-bottom: 1rem;
 }
 
