@@ -275,7 +275,7 @@ li {
 }
 
 .cosmos-image img {
-  width: min(220px, 70vw);
+  width: min(350px, 70vw);
   height: auto;
   display: block;
 }
