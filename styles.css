@@ -271,6 +271,7 @@ li {
   margin: 0 auto 1.5rem;
   max-width: 280px;
   padding: 1.2rem;
+  border: 1px solid var(--border);
   border-radius: 50%;
   background: radial-gradient(circle, rgba(255,255,255,0.16), rgba(0,128,128,0.08), transparent 68%);
 }
@@ -882,4 +883,19 @@ li {
     grid-row: auto;
     justify-content: flex-start;
   }
+}
+
+
+/* Factions and Organizations: full horizontal banners for major faction cards */
+.faction-banner {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: contain;
+  object-position: center;
+  margin: 0 0 1rem;
+  border-radius: calc(var(--radius) - 8px);
+  border: 1px solid var(--border);
+  background: rgba(0, 0, 0, 0.35);
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.28);
 }
