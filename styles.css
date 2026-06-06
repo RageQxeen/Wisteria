@@ -596,3 +596,40 @@ li {
     margin: 0 0 1rem;
   }
 }
+
+
+/* Overview hero banner fix: keep the Wisteria header horizontal and fully visible. */
+.overview-hero {
+  grid-template-columns: 1fr;
+  min-height: auto;
+  align-items: start;
+}
+
+.overview-banner {
+  width: 100%;
+  min-height: 0;
+  background: rgba(0, 0, 0, 0.28);
+}
+
+.overview-banner img {
+  width: 100%;
+  height: auto;
+  max-height: none;
+  object-fit: contain;
+  object-position: center;
+}
+
+.current-focus-card {
+  text-align: center;
+}
+
+.square-symbol {
+  display: block;
+  width: 250px;
+  height: 250px;
+  object-fit: cover;
+  margin: 0 auto 1rem;
+  border-radius: 18px;
+  border: 1px solid rgba(230, 230, 250, 0.28);
+  box-shadow: 0 14px 38px rgba(0, 0, 0, 0.35);
+}

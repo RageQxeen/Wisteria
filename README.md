@@ -45,3 +45,8 @@ The site now includes the provided Wisteria images inside `assets/images/` and r
 ## Latest image update
 
 Additional Wisteria banners, location headers, city maps, holiday headers, and character/faction visuals have been added under `assets/images/`.
+
+
+## Latest Update
+- Overview banner now displays as a full horizontal image.
+- Current Play Focus uses a 250x250 graphic at `assets/images/current-play-focus.png`.
