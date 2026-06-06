@@ -649,3 +649,50 @@ li {
   box-shadow: 0 14px 38px rgba(0, 0, 0, 0.38);
   background: rgba(0, 0, 0, 0.28);
 }
+
+
+/* Locations: horizontal full-image presentation */
+.location-list .feature-card {
+  grid-template-columns: 1fr;
+  gap: 1rem;
+}
+
+.location-list .image-frame {
+  width: 100%;
+  min-height: 0;
+  display: block;
+  background: rgba(0, 0, 0, 0.35);
+}
+
+.location-list .image-frame img {
+  width: 100%;
+  height: auto;
+  max-height: none;
+  object-fit: contain;
+  object-position: center;
+}
+
+/* Center the player reference / city map headings */
+.section-heading.sub-heading {
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.section-heading.sub-heading .eyebrow,
+.section-heading.sub-heading h3,
+.section-heading.sub-heading p {
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* City maps: show the entire map image without cropping */
+.map-card img {
+  width: 100%;
+  height: auto;
+  aspect-ratio: auto;
+  object-fit: contain;
+  object-position: center;
+  background: rgba(0, 0, 0, 0.35);
+}
