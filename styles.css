@@ -749,3 +749,15 @@ li {
   display: block;
   background: rgba(0, 0, 0, 0.35);
 }
+
+
+/* Reverted city maps: use original map artwork and show the complete image without horizontal cropping. */
+.map-card img {
+  width: 100%;
+  height: auto !important;
+  aspect-ratio: auto !important;
+  object-fit: contain !important;
+  object-position: center !important;
+  display: block;
+  background: rgba(0, 0, 0, 0.35);
+}
