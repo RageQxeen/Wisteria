@@ -824,3 +824,63 @@ li {
   object-fit: contain;
   object-position: center;
 }
+
+/* Header layout update: move navigation to the right and center the tagline. */
+.site-header {
+  grid-template-columns: minmax(280px, 520px) minmax(0, 1fr);
+  align-items: center;
+}
+
+.brand-block {
+  text-align: center;
+  justify-self: start;
+  width: 100%;
+  max-width: 520px;
+}
+
+.brand-block .tagline {
+  max-width: 100%;
+  margin: 0.35rem auto 0;
+  text-align: center;
+}
+
+.primary-nav {
+  grid-column: 2 / 3;
+  grid-row: 1 / 2;
+  justify-content: flex-end;
+  align-items: center;
+  align-self: center;
+}
+
+@media (max-width: 960px) {
+  .site-header {
+    grid-template-columns: 1fr;
+  }
+
+  .brand-block {
+    justify-self: center;
+    max-width: 100%;
+  }
+
+  .primary-nav {
+    grid-column: 1 / -1;
+    grid-row: auto;
+    justify-content: center;
+  }
+}
+
+@media (max-width: 720px) {
+  .site-header {
+    grid-template-columns: 1fr auto;
+  }
+
+  .brand-block {
+    justify-self: stretch;
+  }
+
+  .primary-nav {
+    grid-column: 1 / -1;
+    grid-row: auto;
+    justify-content: flex-start;
+  }
+}
