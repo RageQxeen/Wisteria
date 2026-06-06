@@ -333,6 +333,7 @@ li {
   margin: 0.4rem 0;
   color: var(--gold);
   font-family: "Cinzel Decorative", serif;
+  text-align: center;
 }
 
 .location-list {
