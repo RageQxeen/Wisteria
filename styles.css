@@ -882,3 +882,26 @@ li {
     justify-content: flex-start;
   }
 }
+
+/* Faction banner repair: keeps transparent bordered faction art from overflowing or breaking cards. */
+.faction-banner {
+  display: block;
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  object-fit: contain;
+  object-position: center;
+  margin: 0 auto 1rem;
+  border-radius: 0;
+  border: 0;
+  box-shadow: none;
+  background: transparent;
+}
+
+#factions .info-card {
+  overflow: hidden;
+}
+
+#factions .info-card:has(.faction-banner) {
+  padding-top: 0.75rem;
+}
