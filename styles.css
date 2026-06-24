@@ -567,10 +567,11 @@ li {
 .mini-banner {
   width: 100%;
   display: block;
-  aspect-ratio: 3 / 1;
-  object-fit: cover;
+  margin: 0 auto 1rem;
+  height: auto;
+  object-fit: contain;
+  object-position: center center;
   border-radius: calc(var(--radius) - 8px);
-  margin-bottom: 1rem;
 }
 
 .mini-symbol {
@@ -654,19 +655,25 @@ li {
   gap: 1rem;
 }
 
+/* Location banners */
+/* Location banners */
 .location-list .image-frame {
   width: 100%;
-  min-height: 0;
+  height: auto !important;
+  min-height: unset !important;
+  aspect-ratio: unset !important;
+  overflow: visible !important;
   display: block;
-  background: rgba(0, 0, 0, 0.35);
+  background: transparent;
 }
 
 .location-list .image-frame img {
   width: 100%;
-  height: auto;
-  max-height: none;
-  object-fit: contain;
-  object-position: center;
+  height: auto !important;
+  max-height: none !important;
+  display: block;
+  object-fit: unset !important;
+  object-position: center bottom !important;
 }
 
 /* Center the player reference / city map headings */
@@ -884,17 +891,11 @@ li {
 
 /* Faction banner repair: keeps transparent bordered faction art from overflowing or breaking cards. */
 .faction-banner {
-  display: block;
   width: 100%;
-  max-width: 100%;
   height: auto;
+  display: block;
   object-fit: contain;
-  object-position: center;
-  margin: 0 auto 1rem;
-  border-radius: 0;
-  border: 0;
-  box-shadow: none;
-  background: transparent;
+  object-position: center bottom;
 }
 
 #factions .info-card {
